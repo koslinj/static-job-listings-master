@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[309],{309:function(e,p,s){e.exports=s.p+"static/media/bg-header-desktop.752d0faf14c00c6fb55f.svg"}}]);

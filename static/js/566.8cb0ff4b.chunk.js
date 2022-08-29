@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[566],{566:function(e,c,p){e.exports=p.p+"static/media/icon-remove.70c075ce001e5ccae7c6.svg"}}]);

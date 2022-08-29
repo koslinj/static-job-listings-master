@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[485],{485:function(p,s,e){p.exports=e.p+"static/media/shortly.3c01b577742e2648f6f9.svg"}}]);

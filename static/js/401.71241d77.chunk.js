@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapp=self.webpackChunkapp||[]).push([[401],{401:function(e,p,a){e.exports=a.p+"static/media/faceit.54a148ce9e8793ff767e.svg"}}]);

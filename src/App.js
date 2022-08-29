@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import data from "./data.json";
+import Jobs from "./Jobs";
+import { useState } from "react";
+import Header from "./Header";
+import './style.css'
 
 function App() {
+
+
+  const [filterKeywords, setfilterKeywords] = useState([]);
+
+  const removeFilterKeywords = (item) => {
+    setfilterKeywords([...filterKeywords].filter(x => x !== item));
+  }
+
+  const addFilterKeywords = (item) => {
+    if (!filterKeywords.includes(item)) {
+      setfilterKeywords([...filterKeywords, item]);
+    }
+  };
+
+  const removeAll = () => {
+    setfilterKeywords([]);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header keywords={filterKeywords} remkeywords={removeFilterKeywords} remall={removeAll} />
+      <Jobs data={data} setkeywords={addFilterKeywords} keywords={filterKeywords} />
+    </>
   );
 }
 
